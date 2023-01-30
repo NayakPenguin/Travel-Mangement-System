@@ -3,14 +3,18 @@
 #include <vector>
 #include <algorithm>
 #include <string>
-#include "sample.h"
+#include "cabs.h"
 
 using namespace std;
     
 int main(){
-    cout<<"Hola, Good morning!"<<endl;
-    Human h1(2, "Anadi Pandi sex");
-    h1.getHuman();
+    Cab c1;
+    c1.setCab();
+    c1.showDetails();
+    c1.bookCab(11.2);
+    c1.showDetails();
+    c1.bookCab(4.35);
+    c1.showDetails();
 
     return 0;
 }
